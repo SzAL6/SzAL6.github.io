@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Chapter 3: The Friction",
+  "description": "Support tickets by category",
+  "data": {
+    "values": [
+      { "category": "Billing",     "tickets": 142 },
+      { "category": "Onboarding",  "tickets": 98 },
+      { "category": "Bug",         "tickets": 76 },
+      { "category": "Feature Req", "tickets": 54 },
+      { "category": "Other",       "tickets": 31 }
+    ]
+  },
+  "mark": { "type": "bar" },
+  "encoding": {
+    "x": { "field": "category", "type": "nominal", "title": "Category" },
+    "y": { "field": "tickets", "type": "quantitative", "title": "Tickets" }
+  }
+}

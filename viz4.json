@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Chapter 4: The Pivot",
+  "description": "Churn rate before and after the pivot",
+  "data": {
+    "values": [
+      { "phase": "Pre-Pivot",  "churn": 9.4 },
+      { "phase": "Post-Pivot", "churn": 4.1 }
+    ]
+  },
+  "mark": { "type": "bar" },
+  "encoding": {
+    "x": { "field": "phase", "type": "nominal", "title": "Phase" },
+    "y": { "field": "churn", "type": "quantitative", "title": "Churn Rate (%)" }
+  }
+}

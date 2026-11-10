@@ -2,22 +2,69 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Vega-Lite Visualization</title>
+    <title>The Arc of KidaVentures</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <style>
-        body { font-family: sans-serif; margin: 20px; }
+        body { font-family: sans-serif; margin: 40px; max-width: 1000px; margin-left: auto; margin-right: auto; color: #222; }
+        .chapter { margin-bottom: 60px; border-bottom: 1px solid #ddd; padding-bottom: 40px; }
+        .chapter:last-child { border-bottom: none; }
+        .filter { font-style: italic; color: #555; margin-bottom: 8px; }
+        .chapter h2 { margin-bottom: 4px; }
+        .chapter .desc { font-size: 0.9em; color: #888; margin-bottom: 12px; }
         #vis { width: 50%; height: 400px; }
     </style>
 </head>
 <body>
-    <h1>Vega-Lite Visualization</h1>
-    <div id="vis"></div>
+    <h1>The Arc of KidaVentures</h1>
+
+    <div class="chapter">
+        <h2>Chapter 1: The Spark</h2>
+        <div class="desc">First 100 days - weekly active users</div>
+        <div class="filter">A quiet launch. One founder, one laptop, one stubborn belief that the problem was real.</div>
+        <div id="vis1"></div>
+    </div>
+
+    <div class="chapter">
+        <h2>Chapter 2: The Traction</h2>
+        <div class="desc">Monthly recurring revenue by segment</div>
+        <div class="filter">Word spread in the places where it hurt the most. Enterprise said yes. SMB followed. Consumer was the echo.</div>
+        <div id="vis2"></div>
+    </div>
+
+    <div class="chapter">
+        <h2>Chapter 3: The Friction</h2>
+        <div class="desc">Support tickets by category</div>
+        <div class="filter">Growth drew attention to the cracks. Billing was loudest. Onboarding was the second wound. The bugs were just noise.</div>
+        <div id="vis3"></div>
+    </div>
+
+    <div class="chapter">
+        <h2>Chapter 4: The Pivot</h2>
+        <div class="desc">Churn rate before and after the pivot</div>
+        <div class="filter">We stopped selling the thing we had and started selling the thing that worked. Churn fell by more than half in a single quarter.</div>
+        <div id="vis4"></div>
+    </div>
+
+    <div class="chapter">
+        <h2>Chapter 5: The Horizon</h2>
+        <div class="desc">Projected ARR over the next 4 quarters</div>
+        <div class="filter">The curve ahead is not a guess. It is a plan, drawn from the slope we earned. The next chapter is already being written.</div>
+        <div id="vis5"></div>
+    </div>
+
     <script>
-        fetch("viz.json")
-            .then(response => response.json())
-            .then(spec => vegaEmbed("#vis", spec));
+        function render(file, id) {
+            fetch(file)
+                .then(response => response.json())
+                .then(spec => vegaEmbed("#" + id, spec));
+        }
+        render("viz1.json", "vis1");
+        render("viz2.json", "vis2");
+        render("viz3.json", "vis3");
+        render("viz4.json", "vis4");
+        render("viz5.json", "vis5");
     </script>
 </body>
 </html>
