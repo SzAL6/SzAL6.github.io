@@ -1,11 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Chapter 4: The Pivot",
-  "description": "Churn rate before and after the pivot",
+  "description": "Monthly churn rate before and after the pivot",
   "data": {
     "values": [
       { "phase": "Pre-Pivot",  "churn": 9.4 },
-      { "phase": "Post-Pivot", "churn": 4.1 }
+      { "phase": "Pre-Pivot",  "churn": 8.9 },
+      { "phase": "Pre-Pivot",  "churn": 9.1 },
+      { "phase": "Pre-Pivot",  "churn": 9.8 },
+      { "phase": "Pre-Pivot",  "churn": 9.2 },
+      { "phase": "Pre-Pivot",  "churn": 9.6 },
+      { "phase": "Post-Pivot", "churn": 4.1 },
+      { "phase": "Post-Pivot", "churn": 3.8 },
+      { "phase": "Post-Pivot", "churn": 4.3 },
+      { "phase": "Post-Pivot", "churn": 3.6 },
+      { "phase": "Post-Pivot", "churn": 3.9 },
+      { "phase": "Post-Pivot", "churn": 3.4 }
     ]
   },
   "mark": { "type": "bar" },

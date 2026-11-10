@@ -1,14 +1,29 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Chapter 3: The Friction",
-  "description": "Support tickets by category",
+  "description": "Support tickets by category across 8 weeks",
   "data": {
     "values": [
       { "category": "Billing",     "tickets": 142 },
-      { "category": "Onboarding",  "tickets": 98 },
-      { "category": "Bug",         "tickets": 76 },
-      { "category": "Feature Req", "tickets": 54 },
-      { "category": "Other",       "tickets": 31 }
+      { "category": "Billing",     "tickets": 158 },
+      { "category": "Billing",     "tickets": 174 },
+      { "category": "Billing",     "tickets": 191 },
+      { "category": "Onboarding",  "tickets": 98  },
+      { "category": "Onboarding",  "tickets": 112 },
+      { "category": "Onboarding",  "tickets": 128 },
+      { "category": "Onboarding",  "tickets": 146 },
+      { "category": "Bug",         "tickets": 76  },
+      { "category": "Bug",         "tickets": 84  },
+      { "category": "Bug",         "tickets": 92  },
+      { "category": "Bug",         "tickets": 101 },
+      { "category": "Feature Req", "tickets": 54  },
+      { "category": "Feature Req", "tickets": 63  },
+      { "category": "Feature Req", "tickets": 71  },
+      { "category": "Feature Req", "tickets": 80  },
+      { "category": "Other",       "tickets": 31  },
+      { "category": "Other",       "tickets": 36  },
+      { "category": "Other",       "tickets": 40  },
+      { "category": "Other",       "tickets": 45  }
     ]
   },
   "mark": { "type": "bar" },

@@ -1,13 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Chapter 5: The Horizon",
-  "description": "Projected ARR over the next 4 quarters",
+  "description": "Projected ARR over the next 8 quarters",
   "data": {
     "values": [
       { "quarter": "Q1", "arr": 145000 },
       { "quarter": "Q2", "arr": 182000 },
       { "quarter": "Q3", "arr": 230000 },
-      { "quarter": "Q4", "arr": 290000 }
+      { "quarter": "Q4", "arr": 290000 },
+      { "quarter": "Q5", "arr": 358000 },
+      { "quarter": "Q6", "arr": 442000 },
+      { "quarter": "Q7", "arr": 542000 },
+      { "quarter": "Q8", "arr": 668000 }
     ]
   },
   "mark": { "type": "line", "point": true },

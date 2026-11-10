@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Chapter 1: The Spark",
-  "description": "First 100 days - weekly active users",
+  "description": "Weekly active users across the first 24 weeks",
   "data": {
     "values": [
       { "week": "W1",  "users": 120 },
@@ -13,7 +13,21 @@
       { "week": "W7",  "users": 420 },
       { "week": "W8",  "users": 610 },
       { "week": "W9",  "users": 560 },
-      { "week": "W10", "users": 780 }
+      { "week": "W10", "users": 780 },
+      { "week": "W11", "users": 710 },
+      { "week": "W12", "users": 930 },
+      { "week": "W13", "users": 860 },
+      { "week": "W14", "users": 1080 },
+      { "week": "W15", "users": 1010 },
+      { "week": "W16", "users": 1240 },
+      { "week": "W17", "users": 1170 },
+      { "week": "W18", "users": 1410 },
+      { "week": "W19", "users": 1330 },
+      { "week": "W20", "users": 1580 },
+      { "week": "W21", "users": 1490 },
+      { "week": "W22", "users": 1740 },
+      { "week": "W23", "users": 1660 },
+      { "week": "W24", "users": 1910 }
     ]
   },
   "mark": { "type": "line", "point": true },
