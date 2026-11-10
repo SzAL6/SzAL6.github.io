@@ -1,6 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Sample Bar Chart",
+  "title": {
+    "text": "Sample Bar Chart",
+    "font": "Comic Sans MS",
+    "fontSize": 20,
+    "color": "#008000"
+  },
   "data": {
     "values": [
       { "category": "A", "value": 10 },
@@ -9,9 +14,9 @@
       { "category": "D", "value": 25 }
     ]
   },
-  "mark": { "type": "bar" },
+  "mark": { "type": "bar", "color": "#008000" },
   "encoding": {
-    "x": { "field": "category", "type": "nominal", "title": "Category" },
+    "x": { "field": "category", "type": "nominal", "title": "Category", "axis": { "labelAngle": 90 } },
     "y": { "field": "value", "type": "quantitative", "title": "Value" }
   }
 }
