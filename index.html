@@ -9,6 +9,13 @@
     <style>
         body { font-family: sans-serif; margin: 20px; }
         #vis { width: 50%; height: 400px; }
+        @keyframes blinkred {
+            0%, 49% { stroke: red; stroke-width: 3; }
+            50%, 100% { stroke: none; stroke-width: 0; }
+        }
+        g[aria-label*="Category D"] rect {
+            animation: blinkred 2s infinite;
+        }
     </style>
 </head>
 <body>
